@@ -136,6 +136,78 @@
             </li>
         </ol>
     </section>
+    <section class="hotel-booking">
+        <h2 class="hotel-booking__caption">
+            Заинтересовались?
+        </h2>
+        <p class="hotel-booking__description">
+            Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне
+        </p>
+        <button class="hotel-booking__search" type="button">
+            Поиск гостиницы в Седоне
+        </button>
+        <div class="hotel-booking__modal">
+        <form class="hotel-booking__form" method="post" action="https://echo.htmlacademy.ru">
+            <label class="hotel-booking__label" for="check-in-date">
+                Дата заезда:
+            </label>
+                <div class="hotel-booking__wrapper">
+                <input class="hotel-booking__input" id="check-in-date" type="date" value="24 апреля 2017">
+                <button class="hotel-booking__input--calendar" type="button">
+                    <span class="visually-hidden">
+                        Открыть календарь
+                    </span>
+                </button>
+                </div>
+                <label class="hotel-booking__label" for="date-of-departure">
+                    Дата выезда:
+                </label>
+                <div class="hotel-booking__wrapper">
+                <input class="hotel-booking__input" id="date-of-departure" type="date" value="4 июля 2017">
+                <button class="hotel-booking__input--calendar" type="button">
+                    <span class="visually-hidden">
+                        Открыть календарь
+                    </span>
+                </button>
+                </div>
+                <label class="hotel-booking__label" for="person">
+                    Взрослые:
+                </label>
+                <div class="hotel-booking__wrapper">
+                    <button class="hotel-booking__input--minus" type="button">
+                        <span class="visually-hidden">
+                            Уменьшить
+                        </span>
+                    </button>
+                    <input class="hotel-booking__input" id="person" type="number" value="2">
+                    <button class="hotel-booking__input--plus" type="button">
+                        <span class="visually-hidden">
+                            Добавить
+                        </span>
+                    </button>
+                </div>
+                <label class="hotel-booking__label" for="children">
+                    Дети:
+                </label>
+                <div class="hotel-booking__wrapper">
+                    <button class="hotel-booking__input--minus" type="button">
+                        <span class="visually-hidden">
+                            Уменьшить
+                        </span>
+                    </button>
+                    <input class="hotel-booking__input" id="children" type="number" value="0">
+                    <button class="hotel-booking__input--plus" type="button">
+                        <span class="visually-hidden">
+                            Добавить
+                        </span>
+                    </button>
+                </div>
+            <button class="hotel-booking__result" type="submit">
+                Найти
+            </button>
+        </form>
+        </div>
+    </section>
 
 </main>
 <footer class="structure footer">
