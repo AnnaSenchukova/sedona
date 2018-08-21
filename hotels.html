@@ -9,7 +9,7 @@
 <body>
 <header class="structure header">
     <nav class="navigation">
-        <a class="navigation__logo-link link-active">
+        <a class="navigation__logo-link" href="index.html">
             <img class=navigation__logo-image src="img/logo.svg" alt="Логотип сервиса поиска гостиниц Sedona">
         </a>
         <ul class="navigation__list">
@@ -29,14 +29,136 @@
                 </a>
             </li>
             <li class="navigation__item">
-                <a class="navigation__link" href="hotels.html">
+                <a class="navigation__link link-active">
                     Гостиницы
                 </a>
             </li>
         </ul>
     </nav>
 </header>
-<main class="structure main"></main>
+<main class="structure hotels">
+    <h1 class="visually-hidden">
+            Найди свой отель!
+        </h1>
+    <form class="options" method="post" action="https://echo.htmlacademy.ru">
+        <fieldset class="options__infrastructure">
+            <legend class="options__title">
+                Инфраструктура:
+            </legend>
+            <div class="options__wrapper">
+            <input class="options__checkbox" id="pool" type="checkbox" name="pool" checked>
+            <label class="options__label" for="pool">
+                Бассейн
+            </label>
+                <input class="options__checkbox" id="parking" type="checkbox" name="parking">
+                <label class="options__label" for="parking">
+                    Парковка
+                </label>
+                <input class="options__checkbox" id="wi-fi" type="checkbox" name="wi-fi">
+                <label class="options__label" for="wi-fi">
+                    Wi-Fi
+                </label>
+            </div>
+        </fieldset>
+        <fieldset class="options__type-hotel">
+            <legend class="options__title">
+                Тип жилья:
+            </legend>
+            <div class="options__wrapper">
+                <input class="options__checkbox" id="hotel" type="checkbox" name="hotel" checked>
+                <label class="options__label" for="hotel">
+                    Гостиница
+                </label>
+                <input class="options__checkbox" id="motel" type="checkbox" name="motel" checked>
+                <label class="options__label" for="motel">
+                    Мотель
+                </label>
+                <input class="options__checkbox" id="apartments" type="checkbox" name="apartments" checked>
+                <label class="options__label" for="apartments">
+                    Апартаменты
+                </label>
+            </div>
+        </fieldset>
+        <fieldset class="options__cash">
+            <legend class="options__title"></legend>
+            <div class="options__wrapper">
+            <input class="options__min-cash" type="number" value="0">
+            <label class="options__label">
+                от
+            </label>
+                <input class="options__max-cash" type="number" value="3000">
+                <label class="options__label">
+                    до
+                </label>
+            </div>
+            <div class="options__cash-range">
+                <div class="options__cash-scale">
+                    <div class="options__cash-scale--select"></div>
+                </div>
+                <div class="options__toggle options__toggle--min"></div>
+                <div class="options__toggle options__toggle--max"></div>
+            </div>
+        </fieldset>
+        <button class="options__button" type="submit">
+            Показать
+        </button>
+    </form>
+    <section class="result">
+        <h2 class="visually-hidden">
+            Результаты поиска отелей
+        </h2>
+        <b class="result__title">
+            Найдено:
+        </b>
+        <span class="result__total">
+            3
+        </span>
+        <section class="sorting">
+            <h2 class="sorting__title">
+                Сортировка:
+            </h2>
+            <ul class="sorting-list">
+                <li class="sorting-item">
+                    <a class="sorting-link" href="soprtingPrise.html">
+                        По цене
+                    </a>
+                </li>
+                <li class="sorting-item">
+                    <a class="sorting-link" href="sortingType.html">
+                        По типу
+                    </a>
+                </li>
+                <li class="sorting-item">
+                    <a class="sorting-link" href="sortingRange.html">
+                        По рейтингу
+                    </a>
+                </li>
+            </ul>
+            <ul class="sorting__result">
+                <li class="sorting__item">
+                    <a class="sorting__button-up" href="sortingUp.html">
+              <span class="visually-hidden">
+                Вверх страницы
+              </span>
+                    </a>
+                </li>
+                <li class="sorting__item">
+                    <a class="sorting__button-down link-active" href="sortingDown.html">
+              <span class="visually-hidden">
+                Вниз страницы
+              </span>
+                    </a>
+                </li>
+            </ul>
+        </section>
+    </section>
+    
+
+
+
+
+
+</main>
 <footer class="structure footer">
 <span class="footer__hashtag">
     #visitSEDONA
