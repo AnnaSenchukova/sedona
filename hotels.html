@@ -82,14 +82,14 @@
         <fieldset class="options__cash">
             <legend class="options__title"></legend>
             <div class="options__wrapper">
-                <input class="options__min-cash" type="number" value="0">
                 <label class="options__label">
                     от
                 </label>
-                <input class="options__max-cash" type="number" value="3000">
+                <input class="options__min-cash" type="number" value="0" min="0" step="100">
                 <label class="options__label">
                     до
                 </label>
+                <input class="options__max-cash" type="number" value="3000" min="0" step="100">
             </div>
             <div class="options__cash-range">
                 <div class="options__cash-scale">
