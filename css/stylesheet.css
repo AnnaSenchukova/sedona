@@ -122,7 +122,7 @@ content: "";
     display: block;
     width: 100%;
     height: inherit;
-    background-image: url("../img/indexMask.svg");
+    background-image: url("../img/");
     background-repeat: no-repeat;
     background-position: 0 0;
 }
