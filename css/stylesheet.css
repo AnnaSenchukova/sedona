@@ -101,7 +101,7 @@ img {
 .main__welcome {
     display: block;
     width: 100%;
-    height: 773px;
+    height: 510px;
     background-image: url("../img/indexBackground.jpg");
     background-repeat: no-repeat;
     background-position: 0 0;
@@ -111,7 +111,6 @@ img {
 content: "";
     display: block;
     width: 100%;
-    height: 42.5%;
     height: inherit;
     background-image: url("../img/indexTitle.png");
     background-repeat: no-repeat;
@@ -122,7 +121,9 @@ content: "";
     content: "";
     display: block;
     width: 100%;
-    background-image: url("../img/");
+    height: inherit;
+    background-image: url("../img/indexMask.svg");
     background-repeat: no-repeat;
     background-position: 0 0;
 }
+
