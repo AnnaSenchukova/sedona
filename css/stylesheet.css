@@ -486,28 +486,64 @@ fill: #000000;
 
 .options {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
     width: 100%;
     /*height: 218px; */
+    padding: 31px 6%;
+
    background-image: url("../img/hotelsBackground.jpg");
     background-repeat: no-repeat;
-    background-position: 0 0;
+    background-position: 50% 13%;
     background-size: cover;
 }
 
 .options__section {
-    width: 33.3%;
-    border: none;
+    width: 21.25%;
+    margin: 0;
 
+    padding: 0;
+}
+
+.options__section:first-child {
+    margin-right: 7.6%;
+}
+
+.options__section--type-hotel {
+    width: 52.25%;
+}
+
+.options__section--cash {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+   width: 26.5%;
+}
+
+
+.options__fieldset {
+    margin: 0;
+    padding: 0;
+
+    border: none;
 }
 
 .options__title {
+    margin: 0;
+
     font-weight: 700;
     font-size: 16px;
     color: #ffffff;
 }
 
+.options__title:not(.options__title--cash) {
+    padding-bottom: 28px;
+}
+
+.options__title--cash {
+    padding-bottom: 14px;
+}
 .options__checkbox {
     display: none;
 }
@@ -517,8 +553,10 @@ fill: #000000;
     color: #ffffff;
 }
 
-.options__checkbox + .options__label--checkbox {
+.options__checkbox + .options__label--checkbox:not(:last-of-type) {
     display: block;
+    margin-bottom: 22px;
+
 }
 
 .options__checkbox + .options__label--checkbox::before {
@@ -527,6 +565,7 @@ fill: #000000;
     vertical-align: middle;
     width: 23px;
     height: 23px;
+    margin-right: 17px;
     background-color: transparent;
     border:2px solid #ffffff;
     border-radius: 3px;
@@ -537,10 +576,12 @@ fill: #000000;
 .options__checkbox:checked + .options__label--checkbox::after {
     content: "";
     position: absolute;
+    left: 0;
     display: inline-block;
     vertical-align: middle;
     width: 26px;
     height: 23px;
+    margin-right: 13px;
 
     background-image: url("../img/formCheckboxOn.svg");
     background-repeat: no-repeat;
@@ -564,49 +605,71 @@ fill: #000000;
 
 
 .options__section--cash .options__wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     position: relative;
+    width: 100%;
+    min-width: 220px;
+    height: 36px;
     border: 2px solid #ffffff;
+    border-radius: 5%;
 
 }
 
 .options__section--cash .options__wrapper::before {
     content: "";
     position: absolute;
-    left:10%; /* temporality */
+    top: 13%;
+    left: 50%; /* temporality */
     width: 2px;
     height: 22px;
 
     background-color: #ffffff;
 }
 
+.options__label--cash {
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
+
+    width: 50%;
+
+}
+
 .options__min-cash,
 .options__max-cash {
+    display: inline-block;
+    vertical-align: baseline;
+    text-align: left;
+width: 28%;
+
     color: #ffffff;
 
     background-color: transparent;
     border: none;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    -moz-appearance: textfield;
-    appearance: none;
     margin: 0;
 }
 
+
+
 .options__cash-range {
     position: relative;
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 31px;
 }
 
 .options__cash-scale {
     display: block;
-    margin: 30px 0;/*temporality*/
 
-    width: 221px; /*temporality*/
+    width: 100%; /*temporality*/
     height: 2px;
     background-color: rgba(255,255,255, 0.3);
 }
 
 .options__cash-scale--select {
-    width: 80%; /*temporality*/
+    width: 71%; /*temporality*/
     height: 2px;
 
     background-color: #ffffff;
@@ -614,9 +677,10 @@ fill: #000000;
 
 .options__toggle {
     position: absolute;
+    top: 23%;
     display: block;
 
-    margin-top: -40px; /*temporality*/
+
     width: 20px;
     height: 20px;
 
@@ -631,7 +695,7 @@ fill: #000000;
 }
 
 .options__toggle--max {
-    right: 0;
+    left: 71%;
 }
 
 .options__toggle:hover,
@@ -643,6 +707,8 @@ fill: #000000;
 }
 
 .options__button {
+    width: 137px;
+    height: 36px;
     text-transform: uppercase;
     color: #ffffff;
 
@@ -657,7 +723,15 @@ fill: #000000;
 }
 
 /*Section result*/
-.result__title,
+.result__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 86px;
+    padding: 0 6%;
+}
+
 .result__total {
     font-weight: 700;
     font-size: 21px;
@@ -667,25 +741,57 @@ fill: #000000;
 
 /*Section sorting*/
 
+.sorting {
+    display: flex;
+    align-items: center;
+
+    width: 80%;
+}
+
 .sorting__title {
+    display: block;
     font-size: 12px;
     line-height: 18px;
     color: #000000;
 }
 
+
+@media (min-width: 1200px) {
+    .sorting__title {
+        position: absolute;
+
+        width: 1px;
+        height: 1px;
+        margin: -1px;
+        padding: 0;
+
+        overflow: hidden;
+    }
+}
+
+
 .sorting__list,
 .sorting__result {
+    display: flex;
+    align-items: center;
+
     margin: 0;
     padding: 0;
 
     list-style: none;
 }
 
+
 .sorting__link {
+    margin-right: 34px;
     font-size: 12px;
     line-height: 18px;
     color: rgba(0,0,0, 0.3);
     border-bottom: 1px dotted #81b3d2;
+}
+
+.sorting__item:first-child .sorting__link {
+    margin-left: 40px;
 }
 
 .sorting__link:hover {
@@ -702,16 +808,27 @@ fill: #000000;
     border-bottom: none;
 }
 
+.sorting__result {
+    display: flex;
+    justify-content: flex-end;
+    flex-grow: 10;
+    height: 100%;
+
+}
+
 .sorting__result .sorting__item {
     position: relative;
     display: inline-block;
     vertical-align: middle;
+
+    width: 15px;
+
 }
 
 .sorting__button-up,
 .sorting__button-down {
     display: inline-block;
-    vertical-align: top;
+    vertical-align: text-top;
     width: 20px;
     height: 100%;
 
@@ -738,7 +855,7 @@ fill: #000000;
     content: "";
 
     position: absolute;
-    bottom: 30%;
+    bottom: 15%;
     right: 0;
 
     display: block;
@@ -753,17 +870,23 @@ fill: #000000;
     border-top: 10px solid #000000;
 }
 
-.sorting__button-down:active::before {
+.sorting__button-down:active::before,
+.sorting__button-down.link-active::before {
     border-top: 10px solid #81b3d2;
 }
+
+
 
 .sorting__button-up:hover::before {
     border-bottom: 10px solid #000000;
 }
 
-.sorting__button-up:active::before {
+.sorting__button-up:active::before,
+.sorting__button-up.link-active::before{
     border-bottom: 10px solid #81b3d2;
 }
+
+
 
 /*Table hotels*/
 

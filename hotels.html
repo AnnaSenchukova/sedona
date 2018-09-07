@@ -44,7 +44,7 @@
         Найди свой отель!
     </h1>
     <form class="options" method="post" action="https://echo.htmlacademy.ru">
-        <fieldset class="options__section options__section--infrastructure">
+        <fieldset class="options__section options__section--infrastructure options__fieldset">
             <legend class="options__title">
                 Инфраструктура:
             </legend>
@@ -63,7 +63,7 @@
                 </label>
             </div>
         </fieldset>
-        <fieldset class="options__section options__section--type-hotel">
+        <fieldset class="options__section options__section--type-hotel options__fieldset">
             <legend class="options__title">
                 Тип жилья:
             </legend>
@@ -82,17 +82,19 @@
                 </label>
             </div>
         </fieldset>
-        <fieldset class="options__section options__section--cash">
-            <legend class="options__title">Стоимость в сутки (Р):</legend>
+        <div class="options__section options__section--cash">
+        <fieldset class="options__fieldset">
+            <legend class="options__title options__title--cash">Стоимость в сутки (Р):</legend>
             <div class="options__wrapper">
-                <label class="options__label">
+                <label class="options__label options__label--cash">
                     от
+                    <input class="options__min-cash" type="text" value="0" min="0" step="100">
                 </label>
-                <input class="options__min-cash" type="number" value="0" min="0" step="100">
-                <label class="options__label">
+
+                <label class="options__label options__label--cash">
                     до
+                    <input class="options__max-cash" type="text" value="3000" min="0" step="100">
                 </label>
-                <input class="options__max-cash" type="number" value="3000" min="0" step="100">
             </div>
             <div class="options__cash-range">
                 <div class="options__cash-scale">
@@ -105,17 +107,16 @@
         <button class="options__button" type="submit">
             Показать
         </button>
+        </div>
     </form>
     <section class="result">
         <h2 class="visually-hidden">
             Результаты поиска отелей
         </h2>
-        <b class="result__title">
-            Найдено:
+        <div class="result__wrapper">
+        <b class="result__total">
+            Найдено: 3
         </b>
-        <span class="result__total">
-            3
-        </span>
         <section class="sorting">
             <h2 class="sorting__title">
                 Сортировка:
@@ -154,6 +155,7 @@
                 </li>
             </ul>
         </section>
+        </div>
         <table class="result__hotels hotels">
             <tr class="hotels__item">
                 <td class="hotels__cell">
