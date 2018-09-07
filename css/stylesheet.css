@@ -900,7 +900,33 @@ width: 28%;
     border-bottom: 1px solid #e5e5e5;
 }
 
+.hotels__cell {
+    padding: 30px 0;
+    vertical-align: middle;
+    text-align: left;
+}
+
+.hotels__cell:first-child {
+    width: 1%;
+    padding-left: 6%;
+    padding-right: 30px;
+}
+
+.hotels__cell:last-child {
+    padding-right: 6%;
+    text-align: right;
+}
+
+.hotels__image {
+    display: block;
+    min-width: 135px;
+    min-height: 90px;
+}
+
 .hotels__title {
+    margin: 0;
+    padding-bottom: 6px;
+
     font-weight: 700;
     font-size: 21px;
     line-height: 26px;
@@ -912,16 +938,28 @@ width: 28%;
 }
 
 .hotels__item:active .hotels__title {
- color: rgba(0,0,0, 0.3);
+    color: rgba(0,0,0, 0.3);
+}
+
+.hotels__description {
+ margin: 0;
+    padding-bottom: 9px;
 }
 
 .hotels__button {
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
+    width: max-content;
     font-weight: 700;
     color: #ffffff;
 
 }
 
 .hotels__button--preview {
+    padding: 0 17px;
+    padding-top: 4px;
+    padding-bottom: 3px;
 background-color: #81b3d2;
 }
 .hotels__button--preview:hover {
@@ -933,6 +971,7 @@ background-color: #81b3d2;
 }
 
 .hotels__button--reserve {
+    height: 28px;
     text-transform: uppercase;
 
     border: none;
@@ -953,26 +992,36 @@ background-color: #766357;
     background-color: #f2f2f2;
 }
 
-.hotels__range::before {
-    content: "";
+.hotels__stars {
     display: block;
+    font-size: 0;
+}
+
+.hotels__stars::before {
+    content: "";
+    display: inline-block;
+    vertical-align: top;
+    text-align: right;
 
     width: 100%;
     height: 17px;
+
+    margin-bottom: 47px;
+
     background-image: url("../img/hotelsStar.svg");
     background-repeat: repeat-x;
 }
 
-.hotels__range--amara::before {
-    width: 32%;
+.hotels__stars--amara::before {
+    width: 72px;
 }
 
-.hotels__range--desert::before {
-    width: 24%;
+.hotels__stars--desert::before {
+    width: 54px;
 }
 
-.hotels__range--poco::before {
-    width: 16%;
+.hotels__stars--poco::before {
+    width: 36px;
 }
 
 
