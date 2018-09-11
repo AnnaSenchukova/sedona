@@ -147,6 +147,8 @@ justify-content: center;
 
 .main__banner {
     position: relative;
+    display: block;
+    z-index: 1;
     width: 100%;
     max-height: 513px;
     min-height: 507px;
@@ -174,23 +176,32 @@ justify-content: center;
     position: absolute;
     top: 0;
     display: block;
-    width: 100%;
-    height: 100%;
+    width: 100.1%;
+    height: 100.1%;
     background-image: url("../img/mask.png");
     background-repeat: no-repeat;
-    background-position: 50% 100%;
+    background-position: -1px 100%;
     background-size: contain;
 }
 
 
 /* Section advantages */
 
+.advantages {
+    display: block;
+    width: 100%;
+}
+
 .advantages__slogan {
     display: flex;
     justify-content: center;
-    align-items: center;
+    text-align: center;
 
-    width: 100%;
+ width: 50%;
+
+    margin: 0 auto;
+    padding-top: 60px;
+    padding-bottom: 40px;
 
     font-weight: 700;
     font-size: 21px;
@@ -198,26 +209,79 @@ justify-content: center;
     color: #000000;
 }
 
+@media (max-width: 1043px) {
+   .advantages__slogan {
+       width: 60%;
+       padding-top: 57px;
+   }
+}
+
+
 .advantages__description--slogan {
     display: flex;
     justify-content: center;
     align-items: center;
 
     width: 100%;
+    margin: 0;
+    padding-bottom: 59px;
 
     line-height: 26px;
 }
 
 .advantages__list,
 .advantages__other {
+    display: flex;
+    flex-wrap: wrap;
+
     margin: 0;
     padding: 0;
 
     list-style: none;
+
+    background-color: #eeeeee;
 }
 
+.advantages__item {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+ align-content: flex-start;
+
+    box-sizing: border-box;
+
+    order:4;
+
+    width: 33.3%;
+    min-height: 257px;
+
+    padding-top: 50px;
+}
+
+.advantages__item:first-child{
+    order:1;
+}
+
+.advantages__item:last-child {
+    order: 2;
+    width: 100%;
+    min-height: 330px;
+    padding-top: 60px;
+
+    background-color: #ffffff;
+
+}
+
+.advantages__item:nth-child(2) {
+    order:3;
+}
+
+
+
+
+
 .advantages__item:first-child,
-.advantages__item:nth-last-child(2) {
+.advantages__item:nth-child(2) {
     width: 100%;
     height: 100%;
 
@@ -225,20 +289,20 @@ justify-content: center;
 }
 
 .advantages__item:first-child::after {
-  content: "";
-  display: block;
-   width: 70%;
+    content: "";
+    display: block;
+    width: 70%;
     height: 60px; /*Временно*/
 
-  background-image: url("../img/advantageTown.jpg");
-  background-repeat: no-repeat;
-  background-position: 100% 0; /*Временно*/
-  background-size: cover;
+    background-image: url("../img/advantageTown.jpg");
+    background-repeat: no-repeat;
+    background-position: 100% 0; /*Временно*/
+    background-size: cover;
 }
 
-.advantages__item:nth-last-child(2)::before{
-  content: "";
-  display: block;
+.advantages__item:nth-child(2)::before{
+    content: "";
+    display: block;
     width: 70%;
     height: 60px; /*Временно*/
 
@@ -248,7 +312,36 @@ justify-content: center;
     background-size: cover;
 }
 
+.advantages__other {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #ffffff;
+}
+
+.advantages__other-item {
+    display: flex;
+    flex-wrap: wrap;
+
+    justify-content: space-around;
+    align-items: center;
+    align-content: flex-start;
+ width: 33.3%;
+}
+
+
+
 .advantages__title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    width: 100%;
+
+    margin: 0 auto;
+    padding: 0 32%;
+    padding-bottom: 31px;
+
     font-weight: 700;
     font-size: 21px;
     color: #000000;
@@ -260,6 +353,8 @@ justify-content: center;
 
     width: 75px;
     height: 72px;
+
+    margin-bottom: 29px;
 
     background-image: url("../img/adventageHostel.svg");
     background-repeat: no-repeat;
@@ -273,6 +368,8 @@ justify-content: center;
     width: 74px;
     height: 70px;
 
+    margin-bottom: 29px;
+
     background-image: url("../img/advantageFood.svg");
     background-repeat: no-repeat;
     background-position: 0 0;
@@ -285,6 +382,8 @@ justify-content: center;
     width: 64px;
     height: 76px;
 
+    margin-bottom: 29px;
+
     background-image: url("../img/adventageSouvenir.svg");
     background-repeat: no-repeat;
     background-position: 0 0;
@@ -293,11 +392,59 @@ justify-content: center;
 .advantages__item:first-child .advantages__title,
 .advantages__item:first-child .advantages__number,
 .advantages__item:first-child .advantages__description,
-.advantages__item:nth-last-child(2) .advantages__title,
-.advantages__item:nth-last-child(2) .advantages__number,
-.advantages__item:nth-last-child(2) .advantages__description{
+.advantages__item:nth-child(2) .advantages__title,
+.advantages__item:nth-child(2) .advantages__number,
+.advantages__item:nth-child(2) .advantages__description{
     color: #ffffff;
 }
+
+.advantages__description {
+
+    width: 180px;
+    text-align: center;
+    margin:  0 auto;
+}
+
+.advantages__item:nth-last-child(3) .advantages__description {
+  width: 149px;
+}
+
+@media (min-width: 1043px) {
+    .advantages__description,
+    .advantages__item:nth-last-child(3) .advantages__description {
+        width: 259px;
+    }
+
+
+}
+
+.advantages__other-item .advantages__description {
+
+width: 165px;
+    text-align: center;
+    margin:  0 auto;
+}
+
+.advantages__other-item:nth-last-child(2) .advantages__description {
+    width: 152px;
+}
+
+@media (min-width: 1043px) {
+    .advantages__other-item .advantages__description,
+    .advantages__other-item:nth-last-child(2) .advantages__description {
+        width: 285px;
+    }
+}
+
+.advantages__number {
+    width: 100%;
+   text-align: center;
+    padding-bottom: 30px;
+}
+
+
+
+
 
 
 /*Section hotel booking and modal*/
