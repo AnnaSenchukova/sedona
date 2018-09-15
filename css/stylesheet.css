@@ -94,6 +94,11 @@ img {
     display: flex;
     justify-content: center;
 }
+.navigation__logo-link:hover:not(.link-active) .navigation__logo-image,
+.navigation__logo-link:focus .navigation__logo-image {
+    width: auto;
+    height: 81px;
+}
 
 .navigation__list {
     display: flex;
@@ -131,15 +136,15 @@ img {
     justify-content: flex-end;
 }
 
-.navigation__link:hover {
-    color: #81b3d2;
-}
-
-.navigation__link:active,
+.navigation__link:hover,
 .navigation__link:focus {
-    color: rgba(0, 0, 0, 0.3);
+    color: #81b3d2;
 
     outline: none;
+}
+
+.navigation__link:active {
+    color: rgba(0, 0, 0, 0.3);
 }
 
 .link-active:not(:hover),
@@ -491,8 +496,10 @@ img {
     border: none;
 }
 
-.hotel-booking__search:hover {
+.hotel-booking__search:hover,
+.hotel-booking__search:focus {
     background-color: #604e43;
+    outline: none;
 }
 
 .hotel-booking__search:active {
@@ -729,16 +736,16 @@ img {
     box-shadow: none;
 }
 
-.hotel-booking__result:hover {
+.hotel-booking__result:hover,
+.hotel-booking__result:focus {
     background-color: #669ec0;
+    outline: none;
 }
 
-.hotel-booking__result:active,
-.hotel-booking__result:focus {
+.hotel-booking__result:active {
     color: rgba(255, 255, 255, 0.3);
 
     background-color: #5496bd;
-    outline: none;
 }
 
 /*Map*/
@@ -846,8 +853,14 @@ img {
 }
 
 .options__checkbox {
-    display: none;
+    position: absolute;
+
+    width: 23px;
+    height: 23px;
+
+    opacity: 0;
 }
+
 
 .options__checkbox + .options__label--checkbox:not(:last-of-type) {
     display: block;
@@ -890,13 +903,31 @@ img {
     opacity: 0;
 }
 
-.options__checkbox:hover + .options__label--checkbox::before,
 .options__checkbox:focus + .options__label--checkbox::before {
+    border: 2px solid #81b3d2;
+}
+
+.options__checkbox:hover + .options__label--checkbox::before {
     border: 2px solid #ffffff;
 }
 
 .options__checkbox:disabled + .options__label--checkbox::before {
     border: 2px solid #6a6a6a;
+}
+
+.options__checkbox:checked + .options__label--checkbox::after {
+    background-image: url("../img/form-checkbox-on.svg");
+    background-repeat: no-repeat;
+}
+
+.options__checkbox:checked:focus + .options__label--checkbox::after {
+    background-image: url("../img/form-checkbox-focus.svg");
+    background-repeat: no-repeat;
+}
+
+.options__checkbox:checked:hover + .options__label--checkbox::after {
+    background-image: url("../img/form-checkbox-on.svg");
+    background-repeat: no-repeat;
 }
 
 .options__checkbox:disabled + .options__label--checkbox::after {
@@ -993,11 +1024,13 @@ img {
 }
 
 .options__toggle:hover,
-.options__toggle:active {
+.options__toggle:active,
+.options__toggle:focus {
     width: 22px;
     height: 22px;
 
     border: 9px solid #ffffff;
+    outline: none;
 }
 
 .options__button {
@@ -1012,7 +1045,8 @@ img {
 }
 
 .options__button:hover,
-.options__button:active {
+.options__button:active,
+.options__button:focus {
     color: #000000;
 
     background-color: #ffffff;
@@ -1099,10 +1133,12 @@ img {
     color: #81b3d2;
 }
 
-.sorting__link:active {
+.sorting__link:active,
+.sorting__link:focus {
     color: #000000;
 
     border-bottom: none;
+    outline: none;
 }
 
 .sorting__link.link-active {
@@ -1169,7 +1205,8 @@ img {
     border-bottom: 10px solid #cacaca;
 }
 
-.sorting__button-down:hover::before {
+.sorting__button-down:hover::before,
+.sorting__button-down:focus::before {
     border-top: 10px solid #000000;
 }
 
@@ -1178,7 +1215,8 @@ img {
     border-top: 10px solid #81b3d2;
 }
 
-.sorting__button-up:hover::before {
+.sorting__button-up:hover::before,
+.sorting__button-up:focus::before {
     border-bottom: 10px solid #000000;
 }
 
@@ -1289,8 +1327,10 @@ img {
     background-color: #81b3d2;
 }
 
-.hotels__button--preview:hover {
+.hotels__button--preview:hover,
+.hotels__button--preview:focus {
     background-color: #669ec0;
+    outline: none;
 }
 
 .hotels__button--preview:active {
@@ -1308,8 +1348,10 @@ img {
     border: none;
 }
 
-.hotels__button--reserve:hover {
+.hotels__button--reserve:hover,
+.hotels__button--reserve:focus {
     background-color: #604e43;
+    outline: none;
 }
 
 .hotels__button--reserve:active {
@@ -1475,12 +1517,15 @@ img {
     color: #000000;
 }
 
-.footer__copyright-link:hover .footer__copyright-image {
+.footer__copyright-link:focus {
+    outline: none;
+}
+
+.footer__copyright-link:hover .footer__copyright-image,
+.footer__copyright-link:focus .footer__copyright-image {
     fill: #81b3d2;
 }
 
-.footer__copyright-link:active .footer__copyright-image,
 .footer__copyright-link:active .footer__copyright-image {
     fill: #bdbbbc;
-    outline: none;
 }
