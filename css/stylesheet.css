@@ -174,10 +174,10 @@ justify-content: center;
 .main__banner::after {
     content: "";
     position: absolute;
-    top: 0;
+    bottom: -0.13%;
     display: block;
-    width: 100.1%;
-    height: 100.1%;
+    width: 100.2%;
+    height: 100%;
     background-image: url("../img/mask.png");
     background-repeat: no-repeat;
     background-position: -1px 100%;
@@ -306,6 +306,7 @@ justify-content: center;
     flex-wrap: wrap;
     width: 100%;
     background-color: #ffffff;
+    padding-top: 61px;
 }
 
 .advantages__other-item {
@@ -313,8 +314,8 @@ justify-content: center;
     flex-wrap: wrap;
 
     justify-content: space-around;
-    align-items: center;
-    align-content: center;
+    align-items: flex-start;
+    align-content: flex-start;
  width: 33.3%;
 }
 
@@ -824,6 +825,7 @@ position: relative;
     display: flex;
     justify-content: center;
     align-items: flex-start;
+
   /*  z-index: 10;
 
 
@@ -844,10 +846,17 @@ position: relative;
 .map__iframe {
     position: absolute;
     top: 0;
-    left: 0;
+    right: 0;
+
     width: 100%;
-    height: 474px;
+    height: 593px;
+
+    border: none;
 }
+
+
+
+
 
 
 
@@ -1531,10 +1540,13 @@ background-color: #766357;
 
 
 .footer__copyright-description {
-   display: block;
+   display: inline-block;
+    vertical-align: middle;
 width: 50%;
     line-height: 26px;
     color: #000000;
+    padding-right: 10px;
+    text-align: right;
 }
 
 
