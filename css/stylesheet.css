@@ -292,7 +292,7 @@ justify-content: center;
     order: 2;
     width: 100%;
     min-height: 330px;
-    padding-top: 60px;
+    padding-top: 0;
 
     background-color: #ffffff;
 
@@ -304,6 +304,7 @@ justify-content: center;
 .advantages__other {
     display: flex;
     flex-wrap: wrap;
+    width: 100%;
     background-color: #ffffff;
 }
 
@@ -313,7 +314,7 @@ justify-content: center;
 
     justify-content: space-around;
     align-items: center;
-    align-content: flex-start;
+    align-content: center;
  width: 33.3%;
 }
 
@@ -364,6 +365,7 @@ justify-content: center;
     align-items: center;
     text-align: center;
     padding: 0 32%;
+    margin-bottom: 30px;
 }
 
 .advantages__title--hotels::before {
@@ -401,6 +403,7 @@ justify-content: center;
     width: 64px;
     height: 76px;
 
+    margin-top: -7px;
     margin-bottom: 29px;
 
     background-image: url("../img/adventageSouvenir.svg");
@@ -462,7 +465,7 @@ justify-content: center;
   width: 149px;
 }
 
-@media (min-width: 1043px) {
+@media (min-width: 1056px) {
     .advantages__description,
     .advantages__item:nth-last-child(3) .advantages__description {
         width: 259px;
@@ -505,13 +508,23 @@ width: 165px;
 
 
 /*Section hotel booking and modal*/
-
+.hotel-booking {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
 .hotel-booking__caption {
     display: flex;
     justify-content: center;
 
     width: 100%;
+
+    margin: 0;
+    padding-top: 57px;
+    padding-bottom: 37px;
+
 
     font-weight: 700;
     font-size: 30px;
@@ -527,6 +540,9 @@ width: 165px;
 
     width: 100%;
 
+    margin: 0;
+    padding-bottom: 52px;
+
     line-height: 24px;
 }
 
@@ -535,6 +551,8 @@ width: 165px;
     vertical-align: middle;
     text-align: center;
 
+    min-width: 568px;
+    min-height: 87px;
 
     font-weight: 700;
     font-size: 21px;
@@ -556,6 +574,33 @@ width: 165px;
     background-color: #503e33;
 }
 
+.hotel-booking__modal {
+    position: absolute;
+    bottom: 0;
+    z-index: 100;
+    transform: translate(0%, 100%);
+    display: none;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    max-width: 568px;
+    padding: 55px;
+    background-color: #ffffff;
+}
+
+.hotel-booking__modal--show {
+    display: flex;
+}
+
+.hotel-booking__form {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+
 .hotel-booking__label,
 .hotel-booking__input {
     font-weight: 700;
@@ -563,13 +608,47 @@ width: 165px;
     color: #000000;
 }
 
+.hotel-booking__label {
+    display: flex;
+    align-items: center;
+    width: 24.45%;
+    height: 38px;
+}
+
+.hotel-booking__label:last-of-type {
+  justify-content: flex-end;
+    padding-right: 27px;
+}
+
 .hotel-booking__wrapper {
-    width: 50%; /*timeless*/
+    width: 75.55%;
+    height: 38px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
     position: relative;
+
+    margin-bottom: 30px;
+
+    background-color: #f2f2f2;
+}
+
+.hotel-booking__wrapper:nth-last-of-type(2),
+.hotel-booking__wrapper:last-of-type {
+    width: 25.55%;
+    margin-bottom: 0;
 }
 
 .hotel-booking__input {
+    position: relative;
     text-transform: uppercase;
+
+    width: 100%;
+    height: 100%;
+
+    margin: 0;
+    padding: 0;
+    padding-left: 14px;
 
     background-color: #f2f2f2;
 
@@ -579,26 +658,52 @@ width: 165px;
     -moz-appearance: none;
     -moz-appearance: textfield;
     appearance: none;
+
+}
+
+.hotel-booking__input::-webkit-outer-spin-button,
+.hotel-booking__input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -moz-appearance: textfield;
+    appearance: none;
     margin: 0;
 }
 
+
+
 .hotel-booking__input:hover {
+    -moz-appearance: number-input;
+    appearance: none;
  background-color: #ebebeb;
 }
 
 .hotel-booking__input:focus {
+    -moz-appearance: number-input;
+    appearance: none;
     background-color: #ffffff;
     border: 2px solid #e5e5e5;
+    outline: none;
+}
+
+.hotel-booking__wrapper:nth-last-of-type(2) .hotel-booking__input,
+.hotel-booking__wrapper:last-of-type .hotel-booking__input{
+    width: 33.33%;
+    vertical-align: middle;
+    text-align: center;
+    padding: 0;
 }
 
 .hotel-booking__input--calendar {
-    position:absolute;
+    position: absolute;
+    top:0;
     right: 0;
 
     display: block;
+    width: 39px;
+    height: 100%;
 
-    width: 21px;
-    height: 22px;
+    padding: 0;
 
     background-color: transparent;
 
@@ -609,15 +714,20 @@ width: 165px;
 fill: #000000;
 }
 
-.hotel-booking__input--calendar:active .hotel-booking__image{
+.hotel-booking__input--calendar:active .hotel-booking__image,
+.hotel-booking__input--calendar:focus .hotel-booking__image {
+    outline: none;
     fill: #81b3d2;
 }
 
 .hotel-booking__button {
+    width: 33.33%;
+    height: 100%;
     background-color: #f2f2f2;
     box-shadow: none;
     border: none;
     position: relative;
+    padding: 0;
 }
 
 .hotel-booking__button--min::before {
@@ -644,14 +754,22 @@ fill: #000000;
 .hotel-booking__button--max::after {
     content: "";
     position: absolute;
-    top:25%;
-    left: 44.8%;
+    top: 40%;
+    left: 45%;
+
     display: inline-block;
     vertical-align: middle;
     text-align: center;
+
     width: 3px;
     height: 11px;
+
     background-color: #a9a9a9;
+}
+
+
+.hotel-booking__button:focus {
+    outline: none;
 }
 
 .hotel-booking__button:hover::after,
@@ -660,11 +778,18 @@ fill: #000000;
 }
 
 .hotel-booking__button:active::after,
-.hotel-booking__button:active::before {
+.hotel-booking__button:active::before,
+.hotel-booking__button:focus::after,
+.hotel-booking__button:focus::before {
     background-color: #81b3d2;
 }
 
 .hotel-booking__result {
+    width: 100%;
+    height: 58px;
+
+    margin-top: 54px;
+
     font-weight: 700;
     font-size: 21px;
     line-height: 26px;
@@ -680,10 +805,53 @@ fill: #000000;
     background-color: #669ec0;
 }
 
-.hotel-booking__result:active {
+.hotel-booking__result:active,
+.hotel-booking__result:focus {
     color: rgba(255,255,255, 0.3);
     background-color: #5496bd;
+
+    outline: none;
 }
+
+/*map*/
+
+.map {
+position: relative;
+    width: 100%;
+    height: 474px;
+    overflow: hidden;
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+  /*  z-index: 10;
+
+
+    background-image:url("../img/map.png");
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+    background-size: auto;
+*/
+}
+
+.map__image {
+    min-width: 1200px;
+    height: auto;
+   /* opacity: 0;*/
+
+}
+
+.map__iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 474px;
+}
+
+
+
+
 
 
 /*Form order hotel*/
