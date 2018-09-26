@@ -4,9 +4,8 @@
     <list default="true" id="32f23932-b166-4df3-b06e-6220feff5208" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/stylesheet.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/stylesheet.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fonts/ptsans.woff" beforeDir="false" afterPath="$PROJECT_DIR$/fonts/ptsans.woff" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fonts/ptsans.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/fonts/ptsans.woff2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hotels.html" beforeDir="false" afterPath="$PROJECT_DIR$/hotels.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/hotels-star.svg" beforeDir="false" afterPath="$PROJECT_DIR$/img/hotels-star.svg" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -23,8 +22,17 @@
       <file leaf-file-name="stylesheet.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/css/stylesheet.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="261">
-              <caret line="1432" column="9" selection-start-line="1432" selection-start-column="9" selection-end-line="1432" selection-end-column="9" />
+            <state relative-caret-position="204">
+              <caret line="1338" column="18" selection-start-line="1338" selection-start-column="18" selection-end-line="1338" selection-end-column="18" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="symbols-sedona (1).woff" pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/Downloads/symbols-sedona (1).woff">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="238">
+              <caret line="14" column="52" lean-forward="true" selection-start-line="14" selection-start-column="52" selection-end-line="14" selection-end-column="52" />
             </state>
           </provider>
         </entry>
@@ -33,7 +41,7 @@
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="458">
-              <caret line="285" column="16" lean-forward="true" selection-start-line="285" selection-start-column="16" selection-end-line="285" selection-end-column="16" />
+              <caret line="285" column="16" selection-start-line="285" selection-start-column="16" selection-end-line="285" selection-end-column="16" />
             </state>
           </provider>
         </entry>
@@ -41,8 +49,8 @@
       <file leaf-file-name="hotels.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/hotels.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="10" column="6" lean-forward="true" selection-start-line="10" selection-start-column="6" selection-end-line="10" selection-end-column="6" />
+            <state relative-caret-position="340">
+              <caret line="100" column="22" selection-start-line="100" selection-start-column="22" selection-end-line="100" selection-end-column="22" />
             </state>
           </provider>
         </entry>
@@ -56,8 +64,8 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/img/form-checkbox-focus.svg" />
-        <option value="$PROJECT_DIR$/hotels.html" />
         <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/hotels.html" />
         <option value="$PROJECT_DIR$/css/stylesheet.css" />
       </list>
     </option>
@@ -124,12 +132,12 @@
       <option name="presentableId" value="Default" />
       <updated>1537040666778</updated>
       <workItem from="1537040668514" duration="10811000" />
-      <workItem from="1537543899431" duration="30564000" />
+      <workItem from="1537543899431" duration="60279000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="41492000" />
+    <option name="totallyTimeSpent" value="71207000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -218,13 +226,6 @@
       <provider selected="true" editor-type-id="images" />
     </entry>
     <entry file="file://D:/sedona/css/stylesheet.css" />
-    <entry file="file://$PROJECT_DIR$/hotels.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="6" lean-forward="true" selection-start-line="10" selection-start-column="6" selection-end-line="10" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/Downloads/symbols-sedona.woff2">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -234,17 +235,31 @@
     <entry file="file://$USER_HOME$/Downloads/pt-sans-v9-latin_cyrillic-regular.woff2">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+    <entry file="file://$USER_HOME$/Downloads/symbols-sedona (1).woff">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="52" lean-forward="true" selection-start-line="14" selection-start-column="52" selection-end-line="14" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="458">
-          <caret line="285" column="16" lean-forward="true" selection-start-line="285" selection-start-column="16" selection-end-line="285" selection-end-column="16" />
+          <caret line="285" column="16" selection-start-line="285" selection-start-column="16" selection-end-line="285" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hotels.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="100" column="22" selection-start-line="100" selection-start-column="22" selection-end-line="100" selection-end-column="22" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/css/stylesheet.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="261">
-          <caret line="1432" column="9" selection-start-line="1432" selection-start-column="9" selection-end-line="1432" selection-end-column="9" />
+        <state relative-caret-position="204">
+          <caret line="1338" column="18" selection-start-line="1338" selection-start-column="18" selection-end-line="1338" selection-end-column="18" />
         </state>
       </provider>
     </entry>
