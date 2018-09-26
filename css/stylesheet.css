@@ -817,6 +817,7 @@ img {
     padding: 26px 6%;
     padding-bottom: 29px;
 
+    background-color: #81b3d2;
     background-image: url("../img/hotels-background.jpg");
     background-repeat: no-repeat;
     background-position: 50% 13%;
@@ -998,13 +999,15 @@ img {
     content: "";
 
     position: absolute;
-    top: 17%;
+    top: 50%;
     left: 50%;
 
     width: 2px;
     height: 22px;
 
     background-color: #ffffff;
+    transform: translate(-50%, -50%);
+
 }
 
 .options__min-cash,
@@ -1017,6 +1020,7 @@ img {
 
     background-color: transparent;
     border: none;
+    cursor: pointer;
 }
 
 .options__cash-range {
@@ -1053,6 +1057,7 @@ img {
     border: 8px solid #ffffff;
     border-radius: 50%;
     box-shadow: 0 2px 1px 0 rgba(171, 171, 171, 0.3);
+    cursor: pointer;
 }
 
 .options__toggle--min {
