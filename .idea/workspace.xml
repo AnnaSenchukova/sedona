@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="32f23932-b166-4df3-b06e-6220feff5208" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/stylesheet.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/stylesheet.css" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -20,8 +19,8 @@
       <file leaf-file-name="stylesheet.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/css/stylesheet.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="891" column="18" selection-start-line="891" selection-start-column="18" selection-end-line="891" selection-end-column="18" />
+            <state relative-caret-position="547">
+              <caret line="1828" column="1" selection-start-line="1828" selection-start-column="1" selection-end-line="1828" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -138,7 +137,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="78544000" />
+    <option name="totallyTimeSpent" value="81521000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="0" />
@@ -373,8 +372,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/css/stylesheet.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="891" column="18" selection-start-line="891" selection-start-column="18" selection-end-line="891" selection-end-column="18" />
+        <state relative-caret-position="547">
+          <caret line="1828" column="1" selection-start-line="1828" selection-start-column="1" selection-end-line="1828" selection-end-column="1" />
         </state>
       </provider>
     </entry>
