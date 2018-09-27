@@ -844,8 +844,8 @@ img {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    align-items: center;
-    width: 30.09%;
+    align-items: flex-end;
+    width: 31%;
     min-width: 220px;
     margin-top: -5px;
 }
@@ -860,6 +860,7 @@ img {
 
 .options__section--cash .options__fieldset {
     width: 100%;
+    max-width: 318px;
 }
 
 .options__title {
@@ -888,11 +889,16 @@ img {
 .options__label--cash {
     display: inline-block;
     width: 50%;
+    padding-left: 9%;
 
     vertical-align: top;
     text-align: center;
 
     cursor: pointer;
+}
+
+.options__label--cash:last-child {
+    padding-left: 2.5%;
 }
 
 .options__checkbox {
@@ -1015,7 +1021,7 @@ img {
     width: 35px;
     margin: 0;
 
-    text-align: center;
+    text-align: left;
     color: #ffffff;
 
     background-color: transparent;
@@ -1039,8 +1045,9 @@ img {
 
 .options__cash-scale--select {
     position: relative;
-    width: 85.7%;
+    width: auto;
     height: 2px;
+    margin-right: 45px;
 
     background-color: #ffffff;
 }
